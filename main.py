@@ -31,7 +31,7 @@ display = ssd1306.SSD1306_I2C(128, 64, i2c)
 # loop
 #
 while True:
-    displayText = "version 1.0"
+    displayText = "version 2.0"
     display.text(displayText, 0, 0, 1)
     display.show()
     
