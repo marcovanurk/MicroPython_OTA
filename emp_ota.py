@@ -4,9 +4,11 @@ from WIFI_CONFIG import SSID, PASSWORD
 
 firmware_url = "https://raw.githubusercontent.com/marcovanurk/MicroPython_OTA/"
 
+
+
 while True:
-    print ('Hello World v2')
-    time.sleep(2500)
+    print ('Hello World v0')
+    time.sleep(2.5)
     
     # check new version available
     ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "emp_ota.py")
