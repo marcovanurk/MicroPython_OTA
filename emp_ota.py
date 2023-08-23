@@ -11,7 +11,7 @@ from WIFI_CONFIG import SSID, PASSWORD
 #
 def GetNewVersion():
     # check new version available
-    ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "emp_ota.py")
+    ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "main.py")
     ota_updater.download_and_install_update_if_available()
 
 
@@ -29,3 +29,5 @@ while True:
         time.sleep(.25)
         
     GetNewVersion()
+    
+
