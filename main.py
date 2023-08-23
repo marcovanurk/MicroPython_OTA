@@ -26,7 +26,7 @@ firmware_url = "https://raw.githubusercontent.com/marcovanurk/MicroPython_OTA/"
 while True:
     for i in range(0, 10):
         led.toggle()
-        time.sleep(2.0)
+        time.sleep(0.25)
         
     GetNewVersion()
     
