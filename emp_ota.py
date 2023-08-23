@@ -7,6 +7,6 @@ while True:
     print ('Hello World v2')
     time.sleep(2500)
     
-    // check new version available
+    # check new version available
     ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "emp_ota.py")
     ota_updater.download_and_install_update_if_available()
