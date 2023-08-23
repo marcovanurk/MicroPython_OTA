@@ -1,5 +1,5 @@
 import time
-from machine import Pin
+import machine
 
 from ota import OTAUpdater
 from WIFI_CONFIG import SSID, PASSWORD
@@ -15,7 +15,7 @@ def GetNewVersion():
     ota_updater.download_and_install_update_if_available()
 
 
-led = Pin("LED", Pin.OUT) # 25 is 'Pico' and "LED" is 'Pico W'
+led = machine.Pin("LED", machine.Pin.OUT) # 25 is 'Pico' and "LED" is 'Pico W'
 firmware_url = "https://raw.githubusercontent.com/marcovanurk/MicroPython_OTA/"
 
 
@@ -30,4 +30,5 @@ while True:
         
     GetNewVersion()
     
+    machine.reset()
 
