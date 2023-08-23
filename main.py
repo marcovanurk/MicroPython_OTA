@@ -58,5 +58,5 @@ while True:
     display.text(displayTextOta, 0, 40, 0)
     display.show()
     
-    machine.reset()
+    # machine.reset()
 
