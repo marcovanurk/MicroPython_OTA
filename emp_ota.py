@@ -1,3 +1,4 @@
+import time
 from ota import OTAUpdater
 from WIFI_CONFIG import SSID, PASSWORD
 
