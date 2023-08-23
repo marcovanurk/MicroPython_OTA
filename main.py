@@ -27,20 +27,36 @@ firmware_url = "https://raw.githubusercontent.com/marcovanurk/MicroPython_OTA/"
 i2c = I2C(0, sda=Pin(12), scl=Pin(13))
 display = ssd1306.SSD1306_I2C(128, 64, i2c)
 
+displayText = '               '
+
+
+
 #
 # loop
 #
 while True:
-    displayText = "version 2.1"
+    display.text(displayText, 0, 0, 0)
+    displayText = "version 1.0"
     display.text(displayText, 0, 0, 1)
     display.show()
     
-    for i in range(30, 0, -1):
-        display.text(str(i), 63, 32, 1)
+    for i in range(60, 0, -1):
+        display.text(str(i), 64, 20, 1)
         display.show()
         time.sleep(1.0)
-        display.text(str(i), 63, 32, 0)
+        display.text(str(i), 64, 20, 0)
         
+    display.text(str(i), 64, 20, 0) 
+    displayTextOta = 'New version...'
+    display.text(displayTextOta, 0, 40, 1)
+    display.show()
+    
+    time.sleep(1)
+    
+    display.text(displayTextOta, 0, 40, 0)
+    display.show()
+    
     GetNewVersion()
     
     machine.reset()
+
