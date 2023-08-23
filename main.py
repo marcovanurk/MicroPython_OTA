@@ -36,7 +36,7 @@ displayText = '               '
 #
 while True:
     display.text(displayText, 0, 0, 0)
-    displayText = "version 1.2"
+    displayText = "version 2.0"
     display.text(displayText, 0, 0, 1)
     display.show()
     
