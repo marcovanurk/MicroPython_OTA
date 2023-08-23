@@ -41,7 +41,6 @@ while True:
         time.sleep(1.0)
         display.text(str(i), 63, 32, 0)
         
-    #GetNewVersion()
+    GetNewVersion()
     
-    #machine.reset()
-
+    machine.reset()
