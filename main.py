@@ -53,10 +53,10 @@ while True:
     
     time.sleep(1)
     
+    GetNewVersion()
+    
     display.text(displayTextOta, 0, 40, 0)
     display.show()
-    
-    GetNewVersion()
     
     machine.reset()
 
