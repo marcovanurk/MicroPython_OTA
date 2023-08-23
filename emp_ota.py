@@ -7,7 +7,7 @@ firmware_url = "https://raw.githubusercontent.com/marcovanurk/MicroPython_OTA/"
 
 
 while True:
-    print ('Hello World v0')
+    print ('Hello World v3')
     time.sleep(2.5)
     
     # check new version available
